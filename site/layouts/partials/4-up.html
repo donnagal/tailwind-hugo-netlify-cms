@@ -1,15 +1,20 @@
-<div class="bg-off-white pv4">
-	<div class="ph3 mw7 center">
-		<h2 class="f2 b lh-title mb2">{{.heading}}</h2>
-		<p class="mb4 mw6">{{.description}}</p>
-
-		<div class="flex-ns flex-wrap mhn2-ns mb3">
+<!-- 4 up -->
+<section class="p-8 bg-grey-lightest aos-init aos-animate" data-aos="fade-up">
+        <h2 class="leading-tight text-center text-black lg:py-8">
+          <small class="block uppercase tracking-wide text-grey-dark text-sm leading-loose">{{.heading}}</small>
+          {{.description}}
+        </h2>
+        <div class="container mx-auto">
+          <div class="sm:flex sm:flex-wrap">
+			
 			{{ range .blurbs }}
-				<div class="ph2-ns w-50-ns mb4">
-					<img src="{{ .image }}" alt="" class="center db mb3" style="width: 240px">
-					<p>{{ .text }}</p>
-				</div>
+            <article class="my-8 text-center sm:w-1/2 sm:px-4 lg:w-1/4">
+                <img src="{{ .image }}">
+              <p class="mt-4">
+					{{ .text }}
+              </p>
+            </article>
 			{{ end }}
-		</div>
-	</div>
-</div>
+          </div>
+        </div>
+      </section>
