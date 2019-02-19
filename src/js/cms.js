@@ -20,6 +20,7 @@ class ColorControl extends React.Component {
   }
 }
 
+CMS.registerPreviewStyle("https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css");
 CMS.registerPreviewStyle("/css/main.css");
 CMS.registerPreviewTemplate("home", HomePreview);
 CMS.registerPreviewTemplate("post", PostPreview);
