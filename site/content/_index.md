@@ -1,7 +1,7 @@
 ---
 title: This is from the CMS
 subtitle: Tailwind template. testing 123.
-image: /img/home-jumbotron.jpg
+image: /img/blog-index.jpg
 blurb:
   heading: From the CMS
   text: >-
