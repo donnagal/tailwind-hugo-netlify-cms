@@ -1,6 +1,6 @@
 ---
 title: This is from the CMS
-subtitle: Tailwind template
+subtitle: Tailwind template. testing 123.
 image: /img/home-jumbotron.jpg
 blurb:
   heading: Why Kaldi?
