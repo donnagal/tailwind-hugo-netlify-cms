@@ -1,8 +1,8 @@
 <!-- 2-up -->
 <div class="container mx-auto py-20">
     <div class="flex flex-wrap">
-        <div class="w-full mb-10">
-            <h2 class="lg:text-3xl">{{.intro.heading}}</h2>
+        <div class="w-full mb-10 leading-normal">
+            <h2 class="lg:text-3xl font-thin pb-2">{{.intro.heading}}</h2>
             <p class="text-grey-darker">{{.intro.text}}</p>
         </div>
       </div> 
@@ -10,8 +10,8 @@
       <div class="flex flex-wrap -mx-2 my-2">
           {{ range .products }}
           <div class="p-2 w-full sm:w-1/2 md:w-1/2 lg:w-1/2">
-            <img src="{{.image}}" alt="" class="block lg:w-1/2">
-            <p class="pt-4 text-grey-darker text-sm">{{.text}}</p>
+            <img src="{{.image}}" alt="" class="block">
+            <p class="pt-4 text-grey-darker text-sm leading-loose">{{.text}}</p>
           </div>
           {{ end }}
         </div>

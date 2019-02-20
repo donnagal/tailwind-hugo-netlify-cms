@@ -1,87 +1,252 @@
-/*! TACHYONS v4.5.5 | http://tachyons.io */
-
-/*
- *
- *      ________            ______
- *      ___  __/_____ _________  /______  ______________________
- *      __  /  _  __ `/  ___/_  __ \_  / / /  __ \_  __ \_  ___/
- *      _  /   / /_/ // /__ _  / / /  /_/ // /_/ /  / / /(__  )
- *      /_/    \__,_/ \___/ /_/ /_/_\__, / \____//_/ /_//____/
- *                                 /____/
- *
- *    TABLE OF CONTENTS
- *
- *    1. External Library Includes
- *       - Reset.css | http://meyerweb.com/eric/tools/css/reset/
- *    2. Tachyons Modules
- *    3. Variables
- *       - Media Queries
- *       - Colors
- *    4. Debugging
- *       - Debug all
- *       - Debug children
- *
+/*!
+ * Template - Template for Tailwind v4.1.1 (https://tailwind-css-template.netlify.com/)
+ * 2019-2019 Donna Galletta
+ * Licensed under MIT (Template for Tailwind/blob/master/LICENSE)
  */
+body {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
 
+@media (min-width: 576px) {
+  .lg\:text-9xl {
+    font-size: 5rem;
+  }
+}
 
-/* External Library Includes */
-@import './imports/_reset';
+.animate-add.active {
+  padding: 0;
+}
 
-/* Modules */
-@import './imports/_box-sizing';
-@import './imports/_images';
-@import './imports/_background-size';
-@import './imports/_background-position';
-@import './imports/_outlines';
-@import './imports/_borders';
-@import './imports/_border-radius';
-@import './imports/_border-style';
-@import './imports/_border-widths';
-@import './imports/_border-colors';
-@import './imports/_code';
-@import './imports/_coordinates';
-@import './imports/_clears';
-@import './imports/_display';
-@import './imports/_flexbox';
-@import './imports/_floats';
-@import './imports/_font-style';
-@import './imports/_font-weight';
-@import './imports/_forms';
-@import './imports/_heights';
-@import './imports/_line-height';
-@import './imports/_links';
-@import './imports/_lists';
-@import './imports/_max-widths';
-@import './imports/_widths';
-@import './imports/_overflow';
-@import './imports/_position';
-@import './imports/_opacity';
-@import './imports/_spacing';
-@import './imports/_text-decoration';
-@import './imports/_text-align';
-@import './imports/_text-transform';
-@import './imports/_type-scale';
-@import './imports/_typography';
-@import './imports/_utilities';
-@import './imports/_visibility';
-@import './imports/_white-space';
-@import './imports/_vertical-align';
-@import './imports/_states';
-@import './imports/_z-index';
-@import './imports/_styles';
-@import './imports/_buttons';
-@import './imports/_svg';
-@import './imports/_cms';
+.z-100 {
+  z-index: 100;
+}
 
-/* Variables */
-/* Importing here will allow you to override any variables in the modules */
-@import './imports/_colors';
-@import './imports/_media-queries';
-@import './imports/_variables';
+.hide {
+  display: none;
+}
 
-/* Debugging */
-@import './imports/_debug-children';
-@import './imports/_debug-grid';
+[class^="trans-"] .trans, [class*=" trans-"] .trans {
+  transition: all;
+}
 
-/* Uncomment out the line below to help debug layout issues */
-/*@import './imports/_debug';*/
+.trans {
+  transition: all 0.5s ease;
+}
+
+.trans-slow {
+  transition-duration: 1s;
+}
+
+@media (max-width: 576px) {
+  .sm\:hide {
+    display: none;
+  }
+  .sm\:show {
+    display: block;
+  }
+  .sm\:h-fill {
+    height: -webkit-fill-available;
+  }
+}
+
+.embed-responsive {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.embed-responsive::before {
+  display: block;
+  content: "";
+}
+
+.embed-responsive .embed-responsive-item,
+.embed-responsive iframe,
+.embed-responsive embed,
+.embed-responsive object,
+.embed-responsive video {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.embed-responsive-21by9::before {
+  padding-top: 42.85714%;
+}
+
+.embed-responsive-16by9::before {
+  padding-top: 56.25%;
+}
+
+.embed-responsive-4by3::before {
+  padding-top: 75%;
+}
+
+.embed-responsive-1by1::before {
+  padding-top: 100%;
+}
+
+.type i {
+  width: 2px;
+  height: 1em;
+  background-color: currentColor;
+  margin-left: 0.3rem;
+}
+
+.bg-g-blue {
+  background-color: #1fc8db;
+  background-image: linear-gradient(141deg, #9fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+
+.bg-g-purple {
+  background-color: #9e21ff;
+  background-image: linear-gradient(141deg, #ed21ff 0%, #9e21ff 51%, #9e21ff 75%);
+}
+
+.bg-img-parallax {
+  background-image: url("https://images.unsplash.com/photo-1476067897447-d0c5df27b5df?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+  height: 60vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-video {
+  position: relative;
+  background-color: black;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.bg-video video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.bg-video .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  z-index: 1;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  .bg-video {
+    background: url("https://images.unsplash.com/photo-1520034475321-cbe63696469a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80") black no-repeat center top scroll;
+  }
+  .bg-video video {
+    display: none;
+  }
+}
+
+.swiper-container-hero, .swiper-overlay-text {
+  height: 70vh;
+}
+
+.swiper-pagination-hero {
+  margin-top: -20px;
+  position: relative;
+  z-index: 10;
+}
+
+.swiper-button-prev, .swiper-button-next {
+  top: 33% !important;
+  margin: auto 2rem;
+}
+
+.swiper-container {
+  height: 400px;
+}
+
+.swiper-pagination-bullet {
+  background: #ef9075;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #ef9075;
+}
+
+nav.active {
+  background: #22292f;
+  padding: 14px 20px;
+}
+
+.menu-wrapper {
+  margin: auto;
+  width: 34px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before {
+  width: 34px;
+  height: 3px;
+  position: fixed;
+}
+
+.hamburger-menu {
+  position: relative;
+  transform: translateY(10px);
+  background: white;
+  transition: all 0ms 300ms;
+}
+
+.hamburger-menu.animate {
+  background: rgba(255, 255, 255, 0);
+}
+
+.hamburger-menu:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  background: white;
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background: white;
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu.animate:after {
+  top: 0;
+  transform: rotate(45deg);
+  transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu.animate:before {
+  bottom: 0;
+  transform: rotate(-45deg);
+  transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
