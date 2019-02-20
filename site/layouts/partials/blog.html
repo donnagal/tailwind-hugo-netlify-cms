@@ -1,12 +1,14 @@
 <!-- Blog -->
-<div class="container mx-auto px-2">
-<div class="flex flex-wrap bg-grey-lighter">
+<div class="container mx-auto">
+<div class="flex flex-wrap my-20">
 		{{ range first 4 (where .Data.Pages "Type" "post") }}
-		<div class="w-1/2 p-2">
-			<div class="text-grey-darker text-center bg-grey-light p-2">
+		<div class="w-1/2 p-2 ">
+			<div class="h-64 border border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
 				{{ .Render "li" }}
 			</div>
 		</div>
 		{{ end }}
 	</div>	  
 </div>
+
+

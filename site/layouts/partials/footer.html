@@ -1,27 +1,20 @@
 
 
-<footer class="bg-grey-darkest p-8 text-grey text-xs md:flex md:flex-wrap">
+<footer class="bg-black p-8 text-grey text-xs md:flex md:flex-wrap">
 		<div class="container mx-auto max-w-lg md:flex md:flex-wrap lg:max-w-xl">
-			<div class="w-full">
-				<div class="">{{ partial "newsletter-form" . }}</div>
-			</div>
 		  <section class="mt-4 md:w-1/4 md:mt-8">
 			<p>
 			  &copy; Copyright
 			</p>
-			<p class="mt-4">
-			  <a href="#" class="no-underline text-white inline-block">
+			<p class="mt-4 ">
 					{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }}
-			  </a>
-			  <a href="#" class="no-underline text-grey inline-block ">
+
 					{{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter") }}
-			  </a>
-			  <a href="#" class="no-underline text-white inline-block ">
+
 					{{ partial "social-icon" (dict "link" "#" "svg" "icons-instagram") }}
-			  </a>
-			  <a href="#" class="no-underline text-white inline-block ">
+
 					{{ partial "social-icon" (dict "link" "#" "svg" "icons-vimeo") }}
-			  </a>
+
 			</p>
 		  </section>
 		  <section class="my-8 md:w-1/4">
@@ -51,12 +44,21 @@
 			  <li class="my-2"><a class="text-white no-underline" href="#">Support</a></li>
 			</ul>
 		  </section>
+
+		  <div class="w-full">
+				<div class="">{{ partial "newsletter-form" . }}</div>
+			</div>
+
 		</div>
 	  </footer>
-	  
+
 
 {{ partial "svg" . }}
 
+    <!-- Plugin JavaScript -->
+    <script src="https://tailwind-css-template.netlify.com/vendor/jquery/jquery.min.js"></script>
+	<!-- <script src="https://unpkg.com/aos@2.3.3/dist/aos.js"></script> -->
+	
 <script src="/app.js"></script>
 
 </body>
