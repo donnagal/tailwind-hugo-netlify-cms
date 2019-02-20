@@ -1,52 +1,59 @@
-<footer class="bg-black ph3 pv4 white">
 
-	<div class="mw7 center pt3">
 
-		<div class="measure-narrow center mb4">
-
-			<img src="/img/logo.svg" alt="Kaldi logo" class="db w4 center mb4 br0">
-			<p class="f3 lh-title light-gray b tc mb2">Newsletter subscribe</p>
-			<p>Get awesome news from us in your inbox every two weeks. Be the first to learn about new products.</p>
-
-			{{ partial "newsletter-form" . }}
-
-		</div>
-
-		<div class="flex-ns justify-between">
-
-			<div>
-				<h3 class="f4 b lh-title mb1 primary">Kaldi</h3>
-				<ul class="mb3">
-					<li><a href="/" class="link">Home</a></li>
-					<li><a href="/products" class="link">Our products</a></li>
-					<li><a href="/values" class="link">About</a></li>
-					<li><a href="/post" class="link">Blog</a></li>
-					<li><a href="/contact" class="link">Contact</a></li>
-				</ul>
+<footer class="bg-grey-darkest p-8 text-grey text-xs md:flex md:flex-wrap">
+		<div class="container mx-auto max-w-lg md:flex md:flex-wrap lg:max-w-xl">
+			<div class="w-full">
+				<div class="">{{ partial "newsletter-form" . }}</div>
 			</div>
-
-			<div>
-				<h3 class="f4 b lh-title mb1 primary">Find out more</h3>
-				<ul class="mb3">
-					<li><a href="/post/jamaica-blue/" class="link">Latest offers</a></li>
-					<li><a href="/contact" class="link">Schedule and appointment</a></li>
-				</ul>
-			</div>
-
-			<div>
-				<h3 class="f4 b lh-title mb2 primary">Social media</h3>
-				<ul class="mhn2">
+		  <section class="mt-4 md:w-1/4 md:mt-8">
+			<p>
+			  &copy; Copyright
+			</p>
+			<p class="mt-4">
+			  <a href="#" class="no-underline text-white inline-block">
 					{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }}
+			  </a>
+			  <a href="#" class="no-underline text-grey inline-block ">
 					{{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter") }}
+			  </a>
+			  <a href="#" class="no-underline text-white inline-block ">
 					{{ partial "social-icon" (dict "link" "#" "svg" "icons-instagram") }}
+			  </a>
+			  <a href="#" class="no-underline text-white inline-block ">
 					{{ partial "social-icon" (dict "link" "#" "svg" "icons-vimeo") }}
-				</ul>
-			</div>
-
+			  </a>
+			</p>
+		  </section>
+		  <section class="my-8 md:w-1/4">
+			<h2 class="uppercase tracking-wide text-grey text-sm font-normal">Company</h2>
+			<ul class="list-reset text-sm">
+			  <li class="my-2"><a class="text-white no-underline" href="#">About</a></li>
+			  <li class="my-2"><a class="text-white no-underline" href="#">Blog</a></li>
+			  <li class="my-2"><a class="text-white no-underline" href="#">Careers</a></li>
+			  <li class="my-2"><a class="text-white no-underline" href="#">Press</a></li>
+			</ul>
+		  </section>
+		  <section class="my-8 md:w-1/4">
+			<h2 class="uppercase tracking-wide text-grey text-sm font-normal">Product</h2>
+			<ul class="list-reset text-sm">
+			  <li class="my-2"><a class="text-white no-underline" href="#">Features</a></li>
+			  <li class="my-2"><a class="text-white no-underline" href="#">Tour</a></li>
+			  <li class="my-2"><a class="text-white no-underline" href="#">Pricing</a></li>
+			  <li class="my-2"><a class="text-white no-underline" href="#">Screencasts</a></li>
+			</ul>
+		  </section>
+		  <section class="my-8 md:w-1/4">
+			<h2 class="uppercase tracking-wide text-grey text-sm font-normal">Legal</h2>
+			<ul class="list-reset text-sm">
+			  <li class="my-2"><a class="text-white no-underline" href="#">Terms</a></li>
+			  <li class="my-2"><a class="text-white no-underline" href="#">Legal information</a></li>
+			  <li class="my-2"><a class="text-white no-underline" href="#">Privacy</a></li>
+			  <li class="my-2"><a class="text-white no-underline" href="#">Support</a></li>
+			</ul>
+		  </section>
 		</div>
-	</div>
-
-</footer>
+	  </footer>
+	  
 
 {{ partial "svg" . }}
 
