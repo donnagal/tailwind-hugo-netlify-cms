@@ -1,7 +1,7 @@
 ---
 title: This is from the CMS
-subtitle: Tailwind template. testing 123.
-image: /img/blog-index.jpg
+subtitle: Tailwind template. Yay CMS!
+image: /img/about-shade-grown.jpg
 blurb:
   heading: From the CMS
   text: >-
