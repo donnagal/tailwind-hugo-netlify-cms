@@ -1,7 +1,7 @@
 <!-- 4 up -->
-<section class="p-8 bg-grey-lightest aos-init aos-animate" data-aos="fade-up">
-        <h2 class="leading-tight text-center text-black lg:py-8">
-          <small class="block uppercase tracking-wide text-grey-dark text-sm leading-loose">{{.heading}}</small>
+<section class="py-32 bg-grey-lightest aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+        <h2 class="leading-tight text-lg font-thin text-center text-grey-darker lg:px-32 pb-20">
+          <small class="block font-bold uppercase tracking-wide text-grey-dark text-sm leading-loose">{{.heading}}</small>
           {{.description}}
         </h2>
         <div class="container mx-auto">
@@ -10,7 +10,7 @@
 			{{ range .blurbs }}
             <article class="my-8 text-center sm:w-1/2 sm:px-4 lg:w-1/4">
                 <img src="{{ .image }}">
-              <p class="mt-4">
+              <p class="pt-4 text-grey-darker text-sm leading-loose">
 					{{ .text }}
               </p>
             </article>

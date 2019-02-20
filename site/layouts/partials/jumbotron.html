@@ -3,13 +3,13 @@
     <div class="container flex flex-col h-full mx-auto">
       <div class="flex-grow flex flex-col justify-center text-center">
           
-        <div class="pb-5">
-            <h1 class="inline-block text-5xl">{{.title}}</h1>
+        <div class="pb-5" data-aos="fade" data-aos-duration="3000">
+            <h1 class="inline-block text-5xl" >{{.title}}</h1>
         </div>
         
   
         {{ if .subtitle }}
-        <h1 class="text-2xl">
+        <h1 class="text-2xl" data-aos="fade" data-aos-duration="3000">
           {{.subtitle}}
         </h1>
         {{ end }}

@@ -1,15 +1,19 @@
 {{ define "main" }}
+  <div class="container mx-auto leading-loose">
+    <div class="my-32 py-32">
+        <h1 class="pb-5 font-normal">{{.Title}}</h1>
+        <div class="pb-5">
+          <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
+          <p>Read in {{ .ReadingTime }} minutes</p>
+        </div>
+        <div class="">
+          <p class="">{{ .Description }}</p>
+          {{ if .Params.image }}
+          <img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
 
-  <div class="mw6 center ph3 pv4">
-    <h1 class="f2 lh-title b mb3">{{.Title}}</h1>
-    <div class="flex justify-between grey-3">
-      <p>{{ .Date.Format "Mon, Jan 2, 2006" }}</p>
-      <p>Read in {{ .ReadingTime }} minutes</p>
-    </div>
-    <div class="cms mw6">
-      <p>{{ .Description }}</p>
-      {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
-      {{ .Content }}
+         {{ .Content }}
+        </div>
+
     </div>
   </div>
 {{ end }}
