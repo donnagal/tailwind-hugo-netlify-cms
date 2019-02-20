@@ -3,7 +3,12 @@
 <div class="flex flex-wrap my-20">
 		{{ range first 4 (where .Data.Pages "Type" "post") }}
 		<div class="w-1/2 p-2 ">
-			<div class="h-64 border border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+			<div class="
+			h-64 border border-grey-light 
+			bg-grey-lightest 
+			rounded-b lg:rounded-b-none lg:rounded-r 
+			p-4 flex flex-col justify-between 
+			leading-normal">
 				{{ .Render "li" }}
 			</div>
 		</div>
