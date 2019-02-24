@@ -3,9 +3,8 @@ title: This is from the CMS
 subtitle: Tailwind template. Yay CMS!
 image: /img/about-shade-grown.jpg
 video:
-  heading: Video Demo
-  text: >-
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+  heading: ABC
+  text: short-text
 blurb:
   heading: From the CMS
   text: >-
