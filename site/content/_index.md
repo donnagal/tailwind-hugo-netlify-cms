@@ -2,6 +2,9 @@
 title: This is from the CMS
 subtitle: Tailwind template. Yay CMS!
 image: /img/about-shade-grown.jpg
+video:
+  heading: ABC
+  text: short-text
 blurb:
   heading: From the CMS
   text: >-
