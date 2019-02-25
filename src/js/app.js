@@ -30,3 +30,16 @@ if (window.netlifyIdentity) {
 
   btnScrollDown.addEventListener('click', scrollDown);
 })();
+
+
+
+
+$(function($){
+  
+  //Video Poster image
+  $('.play').click(function() {
+    const video = '<iframe src="' + $('img').attr('data-video') + '"></iframe>';
+    $(this).replaceWith(video);
+  });
+
+});
