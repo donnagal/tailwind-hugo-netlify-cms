@@ -5,6 +5,7 @@ image: /img/about-shade-grown.jpg
 video:
   heading: This is a video section
   image: /img/about-jumbotron.jpg
+  vsrc: https://www.youtube.com/embed/_SglEZKFZxY?autoplay=1
   text: Testing 123
 blurb:
   heading: From the CMS
