@@ -1,8 +1,8 @@
-/*!
- * Template - Template for Tailwind v4.1.1 (https://tailwind-css-template.netlify.com/)
- * 2019-2019 Donna Galletta
- * Licensed under MIT (Template for Tailwind/blob/master/LICENSE)
- */
+/* Modules */
+@import './imports/_video';
+@import './imports/_btn_scrolldown';
+ 
+ 
  body {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -70,116 +70,6 @@ button:focus {
   }
 }
 
-.embed-responsive {
-  cursor: pointer;
-  position: relative;
-  display: block;
-  width: 100%;
-  padding: 0;
-  overflow: hidden;
-}
-
-.embed-responsive::before {
-  display: block;
-  content: "";
-}
-
-.embed-responsive .embed-responsive-item,
-.embed-responsive iframe,
-.embed-responsive embed,
-.embed-responsive object,
-.embed-responsive video {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
-
-.embed-responsive-21by9::before {
-  padding-top: 42.85714%;
-}
-
-.embed-responsive-16by9::before {
-  padding-top: 56.25%;
-}
-
-.embed-responsive-4by3::before {
-  padding-top: 75%;
-}
-
-.embed-responsive-1by1::before {
-  padding-top: 100%;
-}
-
-button.scroll_down {
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  height: 50px;
-  width: 30px;
-  bottom: 60px;
-  background-color: transparent;
-  border: 2px solid white;
-  border-radius: 20px;
-  cursor: pointer;
-  outline: none;
-}
-
-button.scroll_down:before {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  content: '';
-  width: 6px;
-  height: 6px;
-  margin-left: -3px;
-  background-color: #fff;
-  border-radius: 100%;
-  -webkit-animation: scroll_down_btn-animation 2s infinite;
-  animation: scroll_down_btn-animation 2s infinite;
-  box-sizing: border-box;
-}
-
-@keyframes scroll_down_btn-animation {
-  0% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-webkit-keyframes scroll_down_btn-animation {
-  0% {
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    -webkit-transform: translate(0, 20px);
-    transform: translate(0, 20px);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
 .bg-g-blue {
   background-color: #1fc8db;
@@ -208,70 +98,7 @@ button.scroll_down:before {
   filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
 }
 
-.bg-video {
-  position: relative;
-  background-color: black;
-  height: 90vh;
-  width: 100%;
-  overflow: hidden;
-}
 
-.bg-video video, .bg-video iframe {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-}
-
-.bg-video .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: black;
-  z-index: 1;
-}
-
-@media (pointer: coarse) and (hover: none) {
-  .bg-video {
-    background: url("https://images.unsplash.com/photo-1520034475321-cbe63696469a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80") black no-repeat center top scroll;
-  }
-  .bg-video video {
-    display: none;
-  }
-}
-
-.overlay:after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.32);
-  transition: all 1s ease;
-  animation-delay: 3s;
-  z-index: 0;
-}
-
-.overlay.overlay-hover:hover {
-  cursor: pointer;
-}
-
-.overlay.overlay-hover:hover:after {
-  content: '';
-  background: rgba(0, 0, 0, 0.62);
-  transition: all .5s ease;
-}
 
 .swiper-container-hero, .swiper-overlay-text {
   height: 70vh;
@@ -311,66 +138,3 @@ button.scroll_down:before {
 }
 
 
-
-
-@-webkit-keyframes spin {
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-@keyframes spin {
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-.stroke-dotted {
-  opacity: 0;
-  stroke-dasharray: 4,5;
-  stroke-width: 1px;
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  -webkit-animation: spin 4s infinite linear;
-          animation: spin 4s infinite linear;
-  transition: opacity 1s ease,  stroke-width 1s ease;
-}
-
-.stroke-solid {
-  stroke-dashoffset: 0;
-  stroke-dashArray: 300;
-  stroke-width: 4px;
-  transition: stroke-dashoffset 1s ease,  opacity 1s ease;
-}
-
-.icon {
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  transition: -webkit-transform 200ms ease-out;
-  transition: transform 200ms ease-out;
-  transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
-}
-
-#play:hover .stroke-dotted {
-  stroke-width: 4px;
-  opacity: 1;
-}
-#play:hover .stroke-solid {
-  opacity: 0;
-  stroke-dashoffset: 300;
-}
-#play:hover .icon {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
-}
-
-
-
-#play {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-          transform: translateY(-50%) translateX(-50%);
-}
