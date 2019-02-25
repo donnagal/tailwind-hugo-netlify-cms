@@ -21,6 +21,7 @@ export default class PostPreview extends React.Component {
           <div className="flex-l mhn1-l ph3 center mw7">
             <h2 className="f2 b lh-title mb2 w-40-l">{entry.getIn(["data", "video", "heading"])}</h2>
             <p className="w-60-l mb0">{entry.getIn(["data", "video", "text"])}</p>
+            <img src={getAsset(entry.getIn(["data", "video", "image"]))}/>
           </div>
         </div>
 
