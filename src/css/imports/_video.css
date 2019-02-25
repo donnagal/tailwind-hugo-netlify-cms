@@ -98,15 +98,15 @@ button.scroll_down {
   transition: transform 200ms ease-out, -webkit-transform 200ms ease-out;
 }
 
-#play:hover .stroke-dotted {
+#play:hover .stroke-dotted, .play:hover .stroke-dotted  {
   stroke-width: 4px;
   opacity: 1;
 }
-#play:hover .stroke-solid {
+#play:hover .stroke-solid, .play:hover .stroke-solid {
   opacity: 0;
   stroke-dashoffset: 300;
 }
-#play:hover .icon {
+#play:hover .icon, .play:hover .icon {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
@@ -120,4 +120,31 @@ button.scroll_down {
   left: 50%;
   -webkit-transform: translateY(-50%) translateX(-50%);
           transform: translateY(-50%) translateX(-50%);
+}
+
+/* Background Video */
+.bg-video {
+  position: relative;
+  background-color: black;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+}
+.bg-video video, .bg-video iframe {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  height: 300%;
+  top: -100%;
+}
+.bg-video .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  z-index: 1;
 }
