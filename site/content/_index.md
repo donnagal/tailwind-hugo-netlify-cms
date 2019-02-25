@@ -3,7 +3,7 @@ title: This is from the CMS
 subtitle: Tailwind template. Yay CMS!
 image: /img/about-shade-grown.jpg
 video:
-  heading: ABC
+  heading: This is a video section
   image: /img/about-direct-sourcing.jpg
   text: short-text
   video-src: >-
