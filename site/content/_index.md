@@ -3,8 +3,8 @@ title: This is from the CMS
 subtitle: Tailwind template. Yay CMS!
 image: /img/about-shade-grown.jpg
 video:
- - image: /img/home-about-section.jpg
   heading: ABC
+  image: /img/about-direct-sourcing.jpg
   text: short-text
 blurb:
   heading: From the CMS
