@@ -4,10 +4,8 @@ subtitle: Tailwind template. Yay CMS!
 image: /img/about-shade-grown.jpg
 video:
   heading: This is a video section
-  image: /img/about-direct-sourcing.jpg
-  text: short-text
-  video-src: >-
-    https://player.vimeo.com/video/287237110?autoplay=1&title=0&byline=0&portrait=0
+  image: /img/about-jumbotron.jpg
+  text: Testing 123
 blurb:
   heading: From the CMS
   text: >-
