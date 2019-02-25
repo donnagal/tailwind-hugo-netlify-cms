@@ -6,7 +6,8 @@ video:
   heading: ABC
   image: /img/about-direct-sourcing.jpg
   text: short-text
-  video-src: https://www.youtube.com/embed/_SglEZKFZxY?autoplay=1
+  video-src: >-
+    https://player.vimeo.com/video/287237110?autoplay=1&title=0&byline=0&portrait=0
 blurb:
   heading: From the CMS
   text: >-
