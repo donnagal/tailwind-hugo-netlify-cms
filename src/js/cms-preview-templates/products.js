@@ -105,8 +105,12 @@ export default class PostPreview extends React.Component {
       <div className="">
       	<div className="">
 
-      		<h2 className="leading-tight text-center text-black lg:py-8">{entry.getIn(['data', 'pricing', 'heading'])}</h2>
-      		<p className="block uppercase tracking-wide text-grey-dark text-sm leading-loose">{entry.getIn(['data', 'pricing', 'description'])}</p>
+        <h2 class="leading-tight text-center text-black lg:py-8">
+          <small class="block uppercase tracking-wide text-grey-dark text-sm leading-loose">
+          {entry.getIn(['data', 'pricing', 'heading'])}
+          </small>
+            {entry.getIn(['data', 'pricing', 'description'])}
+        </h2>
 
       		<div className="container mx-auto md:flex md:flex-wrap md:justify-center">
             {(entry.getIn(['data', 'pricing', 'plans']) || []).map((plan, index) => <article className="my-8 text-center md:w-1/2 md:px-8 lg:w-1/3" key={index}>
