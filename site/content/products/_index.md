@@ -1,7 +1,7 @@
 ---
 hero:
   heading: This is a Youtube video
-  id: jnLSYfObARA
+  id: Si8Z87uPpkY
 intro:
   blurbs:
     - image: /img/cake-01.jpeg
@@ -71,6 +71,6 @@ pricing:
         - Green or roasted beans
         - Unlimited varieties
       plan: Custom
-      price: '?'
+      price: '100'
 ---
 
