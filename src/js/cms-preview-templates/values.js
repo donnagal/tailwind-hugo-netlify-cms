@@ -5,14 +5,14 @@ import Jumbotron from "./components/jumbotron";
 
 const MediaBlock = ({heading, text, imageUrl, reverse}) => {
   const imageContainerClassName = reverse
-    ? "ph3-m w-50-m"
-    : "ph3-m w-50-m order-last-m";
-  return <div className="flex-m mhn3-m mb4">
+    ? " bg-grey-dark "
+    : " bg-grey-darker";
+  return <div className="w-full lg:w-1/2">
     <div className={imageContainerClassName}>
-      <img src={imageUrl} alt="" className="db mb2" />
+      <img src={imageUrl} alt="" className="block" />
     </div>
-    <div className="ph3-m w-50-m">
-      <h3 className="f3 b lh-title mb1">{heading}</h3>
+    <div className="p-10">
+      <h3 className="text-2xl text-grey-light">{heading}</h3>
       <p>{text}</p>
     </div>
   </div>;
@@ -34,11 +34,17 @@ export default class ValuesPreview extends React.Component {
     
     return <div>
       <Jumbotron image={image} title={entry.getIn(["data", "title"])} />
-      <div className="bg-off-white pv4">
-        <div className="mw7 center ph3 pt4">
-          {values.map(({text, heading, imageUrl}, i) =>
-            <MediaBlock key={i} text={text} heading={heading} imageUrl={imageUrl} reverse={i % 2 === 0} />
-          )}
+      <div className="mx-auto py-32">
+        <div className="w-full lg:w-1/2 bg-grey-dark">
+          <div className="leading-loose text-white">
+              {values.map(({text, heading, imageUrl}, i) =>
+                <MediaBlock key={i} 
+                text={text} 
+                heading={heading} 
+                imageUrl={imageUrl} 
+                reverse={i % 2 === 0} />
+              )}
+          </div>
         </div>
       </div>
     </div>;
