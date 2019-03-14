@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="/css/main.css" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+
+
+<a onclick="javascript:parent.jQuery.fancybox.close();">
+    <img class="close-flav" src="/img/close.png" />
+</a>
+
+
+<div class="flavour-template" style="">
+
+    <div class="flavour-hero">
+      <div class="name"><h2>Low Sugar Honeydew</h2></div>
+      <div class="picture" style="background-color: #CCFF66"></div>
+    </div>
+    
+    <div class="flavour-info">
+      <h3>Slurpee Low Sugar Honeydew contains:</h3>
+      <div class="ingredients">
+        Carbonated Water, Sweeteners (968, 955), Bulking Agent (1200), Flavour, Food Acid (330), Preservative (211), Colours (104, 142).	</div>
+      <br>
+      <p>All flavours are dairy free, gluten free and vegetarian.</p>
+      
+      
+      <div id="nutritional">
+        <div class="caption"><h3>NUTRITION INFORMATION</h3>AS DISPENSED</div>
+        <!-- Average quantities and amounts -->
+        <div id="avg-quantities-and-amounts">
+          <div class="quantities__head quantities__row">
+            <div class="quantities__column quantities__column--fixed">Avg. Quantity</div>
+            <div class="quantities__column text-right">per 100ml</div><div class="quantities__column text-right">per 375ml (Small)</div><div class="quantities__column text-right">per 650ml (Large)</div><div class="quantities__column text-right">per 850ml (Super)</div><div class="quantities__column text-right">per 1150ml (Mega)</div>			</div>
+          <div class="quantities__row">  <div class="quantities__column  quantities__column--fixed">Energy</div><div class="quantities__column text-right">12.4 kJ</div><div class="quantities__column text-right">47 kJ</div><div class="quantities__column text-right">81 kJ</div><div class="quantities__column text-right">106 kJ</div><div class="quantities__column text-right">143 kJ</div></div><div class="quantities__row">  <div class="quantities__column  quantities__column--fixed">&nbsp;</div><div class="quantities__column text-right">3.0 Cal</div><div class="quantities__column text-right">12 Cal</div><div class="quantities__column text-right">20 Cal</div><div class="quantities__column text-right">26 Cal</div><div class="quantities__column text-right">35 Cal</div></div><div class="quantities__row">  <div class="quantities__column  quantities__column--fixed">Protein</div><div class="quantities__column text-right">0 g</div><div class="quantities__column text-right">0 g</div><div class="quantities__column text-right">0 g</div><div class="quantities__column text-right">0 g</div><div class="quantities__column text-right">0 g</div></div><div class="quantities__row">  <div class="quantities__column  quantities__column--fixed">Fat, total</div><div class="quantities__column text-right">0 g</div><div class="quantities__column text-right">0 g</div><div class="quantities__column text-right">0 g</div><div class="quantities__column text-right">0 g</div><div class="quantities__column text-right">0 g</div></div><div class="quantities__row">  <div class="quantities__column  quantities__column--fixed">- saturated</div><div class="quantities__column text-right">0 g</div><div class="quantities__column text-right">0 g</div><div class="quantities__column text-right">0 g</div><div class="quantities__column text-right">0 g</div><div class="quantities__column text-right">0 g</div></div><div class="quantities__row">  <div class="quantities__column  quantities__column--fixed">Carbohydrates</div><div class="quantities__column text-right">0.1 g</div><div class="quantities__column text-right">0.4 g</div><div class="quantities__column text-right">0.7 g</div><div class="quantities__column text-right">0.9 g</div><div class="quantities__column text-right">1.2 g</div></div><div class="quantities__row">  <div class="quantities__column  quantities__column--fixed">- sugars</div><div class="quantities__column text-right">0.1 g</div><div class="quantities__column text-right">0.4 g</div><div class="quantities__column text-right">0.7 g</div><div class="quantities__column text-right">0.9 g</div><div class="quantities__column text-right">1.2 g</div></div><div class="quantities__row">  <div class="quantities__column  quantities__column--fixed">Sodium</div><div class="quantities__column text-right">2.2 mg</div><div class="quantities__column text-right">8.3 mg</div><div class="quantities__column text-right">14.3 mg</div><div class="quantities__column text-right">18.7 mg</div><div class="quantities__column text-right">25.3 mg</div></div>		</div>
+      </div>
+    </div>
+    
+</div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+
+<script>
+  $( ".flavour-info" ).before( "<div class='flavour-text'>" );
+  $( "#nutritional" ).append( "</div>" );
+</script>

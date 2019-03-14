@@ -9,37 +9,31 @@ if (window.netlifyIdentity) {
   });
 }
 
-// Scroll Down Button
-(function() {
-  'use strict';
 
-  var btnScrollDown = document.querySelector('#scroll_down');
-
-  function scrollDown() {
-    var windowCoords = document.documentElement.clientHeight;
-    (function scroll() {
-      if (window.pageYOffset < windowCoords) {
-        window.scrollBy(0, 10);
-        setTimeout(scroll, 0);
-      }
-      if (window.pageYOffset > windowCoords) {
-        window.scrollTo(0, windowCoords);
-      }
-    })();
-  }
-
-  btnScrollDown.addEventListener('click', scrollDown);
-})();
+// Swipper
+var swiper = new Swiper('.swiper-container', {
+  effect: 'fade',
+  fadeEffect: { crossFade: true },
+  hashNavigation: {
+    watchState: true,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-next',
+    prevEl: '.swiper-prev',
+  },
+});
 
 
 
-
-$(function($){
-  
-  //Video Poster image
-  $('.play').click(function() {
-    const video = '<iframe src="' + $('img').attr('data-video') + '"></iframe>';
-    $(this).replaceWith(video);
-  });
-
+$(function() {
+   $(".swiper-nav a").click(function() {
+      // remove classes from all
+      $(".swiper-nav a").removeClass("active");
+      // add class to the one we clicked
+      $(this).addClass("active");
+   });
 });

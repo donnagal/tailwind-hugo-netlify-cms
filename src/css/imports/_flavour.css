@@ -1,0 +1,124 @@
+
+.flavour-template {
+  color: #4F5459;
+  text-align: left;
+  font-size: .7em;
+  width: 500px;
+  margin: auto;
+  position: relative;
+  top: 40px;
+}
+.flavour-hero {
+  background: url(../img/side-flavour-flavours-bg.png) no-repeat scroll 0 0 transparent;
+  background-size: cover;
+  height: 165px;
+  width: 144px;
+  margin: 9px;
+  float: right;
+  z-index: 1;
+  position: relative;
+  top: -20px;
+}
+
+.flavour-hero .picture {
+    background: url("/img/side-flavour-dispenser.png") no-repeat scroll 0 0 transparent;
+    background-size:contain;
+    display: block;
+    height: 118px;
+    width: 122px;
+    position: relative;
+    left:12px;
+    top: -16px;
+}
+.flavour-hero .name h2{
+    color: #4F5459;
+    display: block;
+    font-size: 12px;
+    font-weight: normal;
+    position: absolute;
+    text-transform: uppercase;
+    width: 141px;
+    position: relative;
+    top: 122px;
+    left: 10px;
+    height: 10px;
+}
+.flavour-hero a {
+    color: #000000;
+    display: block;
+    margin: 14px 0 0 15px;
+    overflow: hidden;
+    width: 139px;
+}
+.ingredients, .flavour-info h3, .flavour-info p {
+  width: 60%;
+}
+
+.caption {
+  background-color:#a19f9f;
+  color: white;
+  position: relative;
+  padding: 10px;
+}
+.flavour-text {
+  position: relative;
+  top: 40px;
+  padding-bottom: 56px;
+}
+
+#nutritional{
+  color: #a19f9f;
+}
+
+/* Quantities */
+.quantities__head {
+    border-bottom: 1px solid #C2C2C2;
+}
+
+.quantities__row {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.quantities__head + .quantities__row > .quantities__column {
+    padding-top: 5px;
+}
+
+.quantities__row:last-child > .quantities__column {
+    padding-bottom: 5px;
+} 
+
+.quantities__column {
+    display: table-cell;
+    padding-left: 4px;
+    padding-right: 4px;
+    vertical-align: middle;
+    width: 20%;
+}
+
+    .quantities__column--fixed {
+        width: 80px;
+    }
+
+    .quantities__head .quantities__column {
+        padding-bottom: 4px;
+        padding-top: 4px;
+    }
+
+.quantities__column + .quantities__column {
+    border-left: 1px solid #C2C2C2;
+}
+
+#avg-quantities-and-amounts {
+  border-bottom: 1px solid #C2C2C2;
+  border-left: 1px solid #C2C2C2;
+  border-right: 1px solid #C2C2C2;
+}
+
+
+.close-flav {
+    position: absolute;
+    left: 560px;
+}
+

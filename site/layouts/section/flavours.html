@@ -1,0 +1,127 @@
+{{ define "main" }}
+
+
+<div class="container-narrow mx-auto bg-white pb-10">
+
+<div class="bg-grey-light text-black text-left uppercase pt-3 pb-2 px-2">
+      <img src="/img/flav-title.gif"/>
+</div>
+<div class="flex mb-10">
+    <div class="flex-1">
+        <img src="/img/flav-title-01.gif"/>
+    </div> 
+    <div class="flex-1">
+      <div class="snap-photo-lg">
+          <a data-fancybox="" data-fancybox data-type="iframe" data-src="/demo/abc.html" href="javascript:;">
+            <img class="bg-yellow" src="/img/flavour-dispenser-lg.png" />
+          </a>
+          <h3 class="text-black uppercase pt-4">Coconut Mango</h3>
+      </div>
+    </div> 
+    <div class="flex-1">
+        <img src="/img/flav-title-02.gif"/>
+    </div> 
+</div>
+
+
+
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" data-hash="1">
+        
+          <h3 class="text-black text-left pt-4 pb-2 px-5 uppercase">
+              Slurpee Low Sugar Flavours – Less Than 1% Sugar
+          </h3>
+          <div class="flex">
+            <div class="flex-1 pb-5 px-3">
+              {{ range .Params.flavs1a }}
+                {{ partial "flavours" . }}
+              {{ end }}
+            </div> 
+        </div>
+
+        <h3 class="text-black text-left pt-4 pb-2 px-5 uppercase">
+            Slurpee Flavours
+          </h3>
+          <div class="flex">
+            <div class="flex-1 pb-5 px-3">
+              {{ range .Params.flavs1b }}
+                {{ partial "flavours" . }}
+              {{ end }}
+            </div> 
+        </div>
+
+      </div>
+      <div class="swiper-slide" data-hash="2">
+       
+          <h3 class="text-black text-left pt-4 pb-2 px-5 uppercase">
+              Slurpee Low Sugar Flavours – Less Than 1% Sugar
+          </h3>
+          <div class="flex">
+            <div class="flex-1 pb-5 px-3">
+              {{ range .Params.flavs2a }}
+                {{ partial "flavours" . }}
+              {{ end }}
+            </div> 
+        </div>
+
+        <h3 class="text-black text-left pt-4 pb-2 px-5 uppercase">
+            Slurpee Flavours
+          </h3>
+          <div class="flex">
+            <div class="flex-1 pb-5 px-3">
+              {{ range .Params.flavs2b }}
+                {{ partial "flavours" . }}
+              {{ end }}
+            </div> 
+        </div>
+
+      </div>
+      <div class="swiper-slide" data-hash="3">
+        
+          <h3 class="text-black text-left pt-4 pb-2 px-5 uppercase">
+              Slurpee Low Sugar Flavours – Less Than 1% Sugar
+          </h3>
+          <div class="flex">
+            <div class="flex-1 pb-5 px-3">
+              {{ range .Params.flavs3a }}
+                {{ partial "flavours" . }}
+              {{ end }}
+            </div> 
+        </div>
+
+        <h3 class="text-black text-left pt-4 pb-2 px-5 uppercase">
+            Slurpee Flavours
+          </h3>
+          <div class="flex">
+            <div class="flex-1 pb-5 px-3">
+              {{ range .Params.flavs3b }}
+                {{ partial "flavours" . }}
+              {{ end }}
+            </div> 
+        </div>
+      
+      </div>
+    </div>
+  </div>
+
+  <div class="swiper-nav">
+    <a href="#1">«</a>
+    <a class="swiper-prev"> ‹ </a>
+    <a class="active" href="#1">1</a>
+    <a href="#2">2</a>
+    <a href="#3">3</a>
+    <a class="swiper-next"> › </a>
+    <a href="#3">»</a>
+  </div>
+  
+
+
+
+ </div>
+
+ 
+
+
+{{ end }}

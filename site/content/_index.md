@@ -2,11 +2,15 @@
 title: This is from the CMS
 subtitle: Tailwind template. Yay CMS!
 image: /img/about-shade-grown.jpg
-video:
-  heading: This is a video section
-  image: /img/about-jumbotron.jpg
-  vsrc: https://www.youtube.com/embed/_SglEZKFZxY?autoplay=1
-  text: Testing 123
+home:
+  heading: This month's flavour
+  image1: img/side-flavour-dispenser.png
+  image2: /img/tile.jpg
+  image3: img/02.png
+  image4: img/03.png
+  flav: bg-blue
+  news: New Slurpee Chupa Chups Flavours
+  newstext: Slurpee and Chupa Chups have collaborated to bring you two fan favourite flavours.
 blurb:
   heading: From the CMS
   text: >-

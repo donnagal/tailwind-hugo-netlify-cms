@@ -1,11 +1,14 @@
 {{ define "main" }}
 
-{{ partial "jumbotron" (dict "imageUrl" "/img/blog-index.jpg" "title" "Latest stories") }}
+<!-- News -->
 
-<div class="container mx-auto">
-  <ul class="mb-32 mt-16">
+<!-- {{ partial "blog" . }} -->
+
+<div class="container-narrow mx-auto bg-white">
+  <img src="/img/pageheading-news.gif" />
+  <ul class="p-4 text-left">
       {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
-          <div class="w-full pt-20 pb-5 border-b">
+          <div class="w-full">
             {{ .Render "li"}}
           </div>
       {{ end }}
