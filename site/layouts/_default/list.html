@@ -4,8 +4,8 @@
 
 <!-- {{ partial "blog" . }} -->
 
-<div class="container-narrow mx-auto bg-white">
-  <img src="/img/pageheading-news.gif" />
+<div class="container-narrow mx-auto lg:bg-white sm:bg-blackest">
+  <img class="lg-only" src="/img/pageheading-news.gif" />
   <ul class="p-4 text-left">
       {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
           <div class="w-full">

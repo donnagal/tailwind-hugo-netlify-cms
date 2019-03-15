@@ -30,10 +30,16 @@ var swiper = new Swiper('.swiper-container', {
 
 
 $(function() {
+
    $(".swiper-nav a").click(function() {
       // remove classes from all
       $(".swiper-nav a").removeClass("active");
       // add class to the one we clicked
       $(this).addClass("active");
    });
+
+   // if background colour is white
+   $('#nutritional a[style="background-color: #FFFFFF"]').css('background', 'lightgrey');
+
 });
+

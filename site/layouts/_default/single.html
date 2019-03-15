@@ -1,8 +1,8 @@
 {{ define "main" }}
 
 
-<div class="container-narrow mx-auto bg-white text-black pb-32">
-   <img src="/img/pageheading-news.gif" />
+<div class="lg-only container-narrow mx-auto bg-white text-black pb-32">
+   <img class="" src="/img/pageheading-news.gif" />
    <div class="border-2 rounded-lg p-5 m-5">
        <div class="w-full mb-10">
             <div class="border-b-2 border-t-2 border-grey-dark">
@@ -33,6 +33,19 @@
     </div>
 </div>
 
+<div class="sm-only text-left sm:bg-blackest px-2 pb-10">
+    <a href="\"><img src="/img/news-header-m.jpg" ></a>
+    <div class="bg-white mx-4 p-4">
+        <div class="border-grey border-b pb-2">
+             <a  class="text-pink-dark no-underline text-sm" href="/news"><span class="text-blue text-xl">«</span> Back to news</a>
+        </div>
+       
 
+        <h2 class="text-xl pb-1 pt-4">{{ .Title }}</h2>
+        <small class="text-black text-xs">{{ .Date.Format "Jan 02, 2006" }}</small>
+        <img class="w-full pt-5 " src="{{ .Params.image }}" alt="{{ .Title }}" />
+        <div class="py-4 leading-normal text-sm">{{ .Content }}</div>
+    </div>
+</div>
 
 {{ end }}
