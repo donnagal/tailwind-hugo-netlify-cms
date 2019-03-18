@@ -1,5 +1,5 @@
 /* Modules */
-@import './imports/_colours';
+@import './imports/_stores';
 @import './imports/_flavour';
 @import './imports/_swipper';
 
@@ -47,9 +47,15 @@ body {
 }
 
 
+.bg-brown-light {
+  background-color: #A19F9F;
+}
 
 .text-grey-mid {
   color: #555555;
+}
+.text-dark {
+  color: #444 !important;
 }
 
 button:focus {
@@ -340,3 +346,12 @@ button:focus {
   right: -43px;
   margin-top: -71px;
 }
+
+
+
+
+
+
+
+
+

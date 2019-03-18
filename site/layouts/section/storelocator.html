@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<div id="storelocator">
+    <div class="page-header"><a href="/" target="_self"><img src="/img/header-store-m.jpg" border="0"></a></div>
+    <div id="content">
+      <input type="button" onClick="setTimeout('initialize()',500);" class="button useMyLocation" id="btnLocation" value="USE MY LOCATION" />
+    <center><p class="or">OR</p></center>
+      <input type="text" id="addressInput" size="10" value="Enter a postcode" class="text" onClick="this.value = '';" />
+      <input type="button" onClick="searchLocations()" class="button" id="search" value="SEARCH" />
+       <p id="address"></p>
+      <div id="map"></div>
+      <div><select id="locationSelect" style="width:100%;visibility:hidden"></select></div>
+    </div>
+  </div>
+
+
+{{ end }}

@@ -38,8 +38,17 @@ $(function() {
       $(this).addClass("active");
    });
 
-   // if background colour is white
-   $('#nutritional a[style="background-color: #FFFFFF"]').css('background', 'lightgrey');
-
+   // if background colour is light
+   $('#nutritional a[style="background-color: #FFFFFF"]').css('background', '#a6a6a6');
+   $('#nutritional a[style="background-color: #CCFF66"]').addClass("text-dark");
+   $('#nutritional a[style="background-color: #FCCA53"]').addClass("text-dark");
+   $('#nutritional a[style="background-color: #FFF888"]').addClass("text-dark");
+   $('#nutritional a[style="background-color: #90EE90"]').addClass("text-dark");
+   $('#nutritional a[style="background-color: #FFFF99"]').addClass("text-dark");
+   $('#nutritional a[style="background-color: #D4E901"]').addClass("text-dark");
+   $('#nutritional a[style="background-color: #bfd833"]').addClass("text-dark");
+   $('#nutritional a[style="background-color: #FFFD37"]').addClass("text-dark");
+   $('#nutritional a[style="background-color: #ffffaa"]').addClass("text-dark");
 });
+
 
