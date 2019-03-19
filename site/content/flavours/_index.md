@@ -244,7 +244,7 @@ flavs3a:
 - title: LOW SUGAR HONEYDEW
   flav: 'background-color: #CCFF66'
   id: /flavour/low-sugar-honeydew.html
-- title: LOW SUGAR ORANGE SHERBET,
+- title: LOW SUGAR ORANGE SHERBET
   flav: 'background-color: #FFB347'
   id: /flavour/low-sugar-orange-sherbet.html
 - title: LOW SUGAR GRAPE
@@ -277,7 +277,7 @@ flavs3a:
 - title: LOW SUGAR SOUR BLUEBERRY
   flav: 'background-color: #5161AC'
   id: /flavour/low-sugar-sour-blueberry.html
-- title: LOW SUGAR WILDBERRY CREAM,
+- title: LOW SUGAR WILDBERRY CREAM
   flav: 'background-color: #b668a4'
   id: /flavour/low-sugar-wildberry-cream.html
 - title: LOW SUGAR LYCHEE
@@ -286,19 +286,19 @@ flavs3a:
 - title: LOW SUGAR SOUR PINK GRAPEFRUIT
   flav: 'background-color: #e53a84'
   id: /flavour/low-sugar-sour-pink-grapefruit.html
-- title: LOW SUGAR PINEAPPLE PASSION,
+- title: LOW SUGAR PINEAPPLE PASSION
   flav: 'background-color: #b19cd9'
   id: /flavour/low-sugar-pineapple-passion.html
 - title: LOW SUGAR LEMON LIME BITTERS
   flav: 'background-color: #ff7722'
   id: /flavour/low-sugar-lemon-lime-bitters.html
-- title: LOW SUGAR KIWI BERRY,
+- title: LOW SUGAR KIWI BERRY
   flav: 'background-color: #e8372d'
   id: /flavour/low-sugar-kiwi-berry.html 
-- title: LOW SUGAR WATERMELON PUNCH,
+- title: LOW SUGAR WATERMELON PUNCH
   flav: 'background-color: #e73059'
   id: /flavour/low-sugar-watermelon-punch.html
-- title: LOW SUGAR LIME TWIST,
+- title: LOW SUGAR LIME TWIST
   flav: 'background-color: #77dd77'
   id: /flavour/low-sugar-lime-twist.html 
 - title: LOW SUGAR MANGO
@@ -311,7 +311,7 @@ flavs3b:
 - title: LEMON MERINGUE
   flav: 'background-color: #ffffaa'
   id: /flavour/lemon-meringue.html
-- title: PASSIONFRUIT,
+- title: PASSIONFRUIT
   flav: 'background-color: #FCCA53'
   id: /flavour/passionfruit.html
 - title: JUICY GRAPE

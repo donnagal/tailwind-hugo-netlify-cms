@@ -1,7 +1,7 @@
 {{ define "main" }}
 
 
-<div class="container-narrow mx-auto bg-white pb-10">
+<div class="lg-only container-narrow mx-auto bg-white pb-10">
 
 <div class="bg-grey-light text-black text-left uppercase pt-3 pb-2 px-2">
       <img src="/img/flav-title.gif"/>
@@ -122,6 +122,37 @@
  </div>
 
  
+ <div class="sm-only mx-auto">
+
+    <a href="\"> <img class="w-full pb-3" src="/img/nut-header-m.jpg" ></a>
+   
+   
+     {{ range .Params.flavs1a }}
+       {{ partial "nutritional-info" . }}
+     {{ end }}
+   
+     {{ range .Params.flavs1b }}
+       {{ partial "nutritional-info" . }}
+     {{ end }}
+   
+     {{ range .Params.flavs2a }}
+       {{ partial "nutritional-info" . }}
+     {{ end }}
+   
+     {{ range .Params.flavs2b }}
+       {{ partial "nutritional-info" . }}
+     {{ end }}
+   
+     {{ range .Params.flavs3a }}
+       {{ partial "nutritional-info" . }}
+     {{ end }}
+   
+     {{ range .Params.flavs3b }}
+       {{ partial "nutritional-info" . }}
+     {{ end }}
+   
+    </div>
+
 
 
 {{ end }}
