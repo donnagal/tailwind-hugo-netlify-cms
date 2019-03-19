@@ -121,4 +121,30 @@
     position: absolute;
     left: 560px;
 }
+.nut-header-m  {
+    display: none;
+}
 
+@media (max-width: 576px) { 
+    .flavour-template,
+    .flavour-info h3, .flavour-info p, .ingredients {
+        width: 100%;
+    }
+    .flavour-hero {
+        display: none;
+    }
+    #nutritional{
+        color: black;
+    }
+    .caption {
+        background-color: #ffffff;
+        color: #000;
+        border: solid 1px #a19f9f;
+    }
+    .nut-header-m  {
+        width: 100%;
+        display: block;
+        margin-bottom: -50px;
+    }
+    
+}

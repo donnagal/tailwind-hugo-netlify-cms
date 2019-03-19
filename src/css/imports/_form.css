@@ -82,7 +82,7 @@
   margin-bottom: 900px;
  }
  
- .sm-only .footerform {
+ .sm-only.footerform {
    margin-top: -900px;
  }
  

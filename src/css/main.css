@@ -94,7 +94,6 @@ button:focus {
 .fade-enter, .fade-leave-to {
   opacity: 0;
 }
-
 @media (max-width: 576px) {
   .sm\:hide {
     display: none;
@@ -181,7 +180,6 @@ button:focus {
   .social-icon {
     width: 50px;
   }
-
 
 .snap-photo {
   background: url(../img/side-flavour-flavours-bg.png) no-repeat scroll 0 0 transparent;
