@@ -1,20 +1,6 @@
 {{ define "main" }}
 
-
-<div class="container-narrow bg-white mx-auto">
-	<p class="leading-normal">{{ .Content }}</p>
-
-	<div class="pt-10">
-			{{ range .Params.contact_entries }}
-			<div class="leading-normal">
-				<h4 class="pt-5">{{ .heading }}</h4>
-				<p class="">{{ .text }}</p>
-			</div>
-		{{ end }}
-	</div>
-
-	{{ partial "contact-form" . }}
-  </div>
+{{ partial "contact-form" .}}
 
 {{ end }}
 

@@ -49,6 +49,18 @@ $(function() {
    $('#nutritional a[style="background-color: #bfd833"]').addClass("text-dark");
    $('#nutritional a[style="background-color: #FFFD37"]').addClass("text-dark");
    $('#nutritional a[style="background-color: #ffffaa"]').addClass("text-dark");
+
+   var loc = window.location.href; 
+   if(/contactus/.test(loc)) {
+     $('footer').addClass('footerform');
+   }
+
+   var loc = window.location.href; 
+   if(/contact/.test(loc)) {
+     $('footer').addClass('footerform');
+   }
+
+
 });
 
 

@@ -1,7 +1,8 @@
 /* Modules */
-@import './imports/_stores';
 @import './imports/_flavour';
+@import './imports/_form';
 @import './imports/_swipper';
+@import './imports/_stores';
 
 body {
   font-family: 'Roboto Condensed', sans-serif;
@@ -346,12 +347,3 @@ button:focus {
   right: -43px;
   margin-top: -71px;
 }
-
-
-
-
-
-
-
-
-
