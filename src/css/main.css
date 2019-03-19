@@ -10,6 +10,14 @@ body {
   text-align: center;
 }
 
+@media (min-width: 769px) { 
+  body {
+    background: url(/img/bg.gif) no-repeat;
+    background-position: center top;
+  }
+}
+
+
 @media (max-width: 576px) { 
   .lg-only {
     display: none;
@@ -161,7 +169,7 @@ button:focus {
 
 @media (min-width: 768px) {
   .container-narrow {
-    max-width: 768px;
+    max-width: 750px;
   }
 }
 
@@ -173,7 +181,7 @@ button:focus {
 
 @media (min-width: 1200px) {
   .container-narrow {
-    max-width: 855px;
+    max-width: 856px;
   }
 }
 

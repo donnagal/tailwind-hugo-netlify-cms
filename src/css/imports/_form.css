@@ -2,6 +2,10 @@
   font-weight: normal !important;
 }
 
+.h-form {
+  height: 900px;
+}
+
 .lg-only .cognito .c-forms-form-body {
   margin-bottom: 230px;
  }
