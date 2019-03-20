@@ -1,4 +1,7 @@
 ---
+hero_title: Chupa Chups Strawberry and cream
+hero_flav: 'background-color: #FFBAD2'
+hero_id: /flavour/chupa-chups-strawberry-and-cream.html
 flavs1a:
   - title: Low Sugar Sour Raspberry
     flav: 'background-color: #CC0099'

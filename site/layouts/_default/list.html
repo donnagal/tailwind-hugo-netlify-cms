@@ -2,11 +2,9 @@
 
 <!-- News -->
 
-<!-- {{ partial "blog" . }} -->
-
 <div class="container-narrow mx-auto lg:bg-white sm:bg-blackest">
   <img class="lg-only" src="/img/pageheading-news.gif" />
-  <ul class="p-4 text-left">
+  <ul class="p-4 text-left"> 
       {{ range (.Paginator 4).Pages.ByPublishDate.Reverse }}
           <div class="w-full">
             {{ .Render "li"}}

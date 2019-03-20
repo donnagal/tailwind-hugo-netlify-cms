@@ -1,6 +1,5 @@
 {{ define "main" }}
 
-
 <div class="lg-only container-narrow mx-auto bg-white pb-10">
 
 <div class="bg-grey-light text-black text-left uppercase pt-3 pb-2 px-2">
@@ -12,10 +11,10 @@
     </div> 
     <div class="flex-1">
       <div class="snap-photo-lg">
-          <a data-fancybox="" data-fancybox data-type="iframe" data-src="/demo/abc.html" href="javascript:;">
-            <img class="bg-yellow" src="/img/flavour-dispenser-lg.png" />
+          <a data-fancybox="" data-fancybox data-type="iframe" data-src="{{ .Params.hero_id }}" href="javascript:;">
+            <img style="{{ .Params.hero_flav }}" src="/img/flavour-dispenser-lg.png" />
           </a>
-          <h3 class="text-black uppercase pt-4">Coconut Mango</h3>
+          <h3 class="text-grey-darkest uppercase pt-4 px-2 -mt-1">{{ .Params.hero_title }}</h3>
       </div>
     </div> 
     <div class="flex-1">

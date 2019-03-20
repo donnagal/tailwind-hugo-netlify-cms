@@ -1,37 +1,36 @@
 {{ define "main" }}
 
-
 <div class="lg-only container-narrow mx-auto bg-white text-black pb-32">
-   <img class="" src="/img/pageheading-news.gif" />
-   <div class="border-2 rounded-lg p-5 m-5">
-       <div class="w-full mb-10">
-            <div class="border-b-2 border-t-2 border-grey-dark">
-                <h2 class="text-3xl font-normal py-1">{{ .Title }}</h2>
+        <img class="" src="/img/pageheading-news.gif" />
+        <div class="border-2 rounded-lg p-5 m-5">
+            <div class="w-full mb-10">
+                 <div class="border-b-2 border-t-2 border-grey-dark">
+                     <h2 class="text-3xl font-normal py-1">{{ .Title }}</h2>
+                 </div>
             </div>
-       </div>
-        <div class="flex">
-                <div class="w-1/2">
-                    <img class="border-grey border-2 " src="{{ .Params.image2 }}" alt="{{ .Title }}" />
-                </div>
-                <div class="w-1/2 px-5 text-left">
-                    <div class="flex">
-                        <div class="pr-2">
-                            <img src="/img/logo-sm.jpg" />
-                        </div>
-                        <div>
-                            <p class="text-red-darker text-sm font-bold leading-normal"><span class="text-grey-dark text-sm font-normal">by</span> {{ .Description }}</p> 
-                            <span class="text-grey-dark text-sm">{{ .Date.Format "Jan 02, 2006" }}</span>
-                        </div>
-                    </div>
-                    <div class="text-grey-dark pt-5 text-sm leading-normal">
-                         <p>{{ .Content }}</p>
-                    </div>
-                    <p class="mt-5"><a class="link-back-news" href="/news">Back to news</a></p>
-                </div>
-                
-        </div>
-    </div>
-</div>
+             <div class="flex">
+                     <div class="w-1/2">
+                         <img class="border-grey border-2 " src="{{ .Params.image2 }}" alt="{{ .Title }}" />
+                     </div>
+                     <div class="w-1/2 px-5 text-left">
+                         <div class="flex">
+                             <div class="pr-2">
+                                 <img src="/img/logo-sm.jpg" />
+                             </div>
+                             <div>
+                                 <p class="text-red-darker text-sm font-bold leading-normal"><span class="text-grey-dark text-sm font-normal">by</span> Team Slurpee</p> 
+                                 <span class="text-grey-dark text-sm">{{ .Date.Format "Jan 02, 2006" }}</span>
+                             </div>
+                         </div>
+                         <div class="text-grey-dark pt-5 text-sm leading-normal">
+                              <p>{{ .Content }}</p>
+                         </div>
+                         <p class="mt-5"><a class="link-back-news" href="/news">Back to news</a></p>
+                     </div>
+                     
+             </div>
+         </div>
+     </div>
 
 <div class="sm-only text-left sm:bg-blackest px-2 pb-10">
     <a href="\"><img src="/img/news-header-m.jpg" ></a>
