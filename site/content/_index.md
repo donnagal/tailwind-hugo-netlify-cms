@@ -1,12 +1,12 @@
 ---
 title: This is from the CMS
-subtitle: Tailwind template. Yay CMS!
-image: /img/about-shade-grown.jpg
+subtitle: Welcome to the template
+image: /img/bg-01.jpeg
 video:
   heading: This is a video section
   image: /img/about-jumbotron.jpg
-  vsrc: https://www.youtube.com/embed/_SglEZKFZxY?autoplay=1
   text: Testing 123
+  vsrc: 'https://www.youtube.com/embed/_SglEZKFZxY?autoplay=1'
 blurb:
   heading: From the CMS
   text: >-
