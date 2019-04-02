@@ -1,18 +1,45 @@
 ---
-home:
-  heading: This month's flavour
-  flav: 'background-color: #FFBAD2'
-  image1: img/side-flavour-dispenser.png
-  image2: /img/tile.jpg
-  image3: /img/02.png
-  image4: /img/news-home.png
-  news: New Slurpee Chupa Chups Flavours
-  newstext: Slurpee and Chupa Chups have collaborated to bring you two fan favourite flavours.
-  vimg1: /img/vid-01.jpg
-  vtext1: Slurpee Zilched - BMX Bandit
-  vimg2: /img/vid-02.jpg
-  vtext2: Slurpee Zilched - Skater Dude
-  vimg3: /img/vid-03.jpg
-  vtext3: Slurpee Zilched - Roller Gals
+title: This is from the CMS
+subtitle: Tailwind template. Yay CMS!
+image: /img/about-shade-grown.jpg
+video:
+  heading: This is a video section
+  image: /img/about-jumbotron.jpg
+  vsrc: https://www.youtube.com/embed/_SglEZKFZxY?autoplay=1
+  text: Testing 123
+blurb:
+  heading: From the CMS
+  text: >-
+    Kaldi is the coffee store for everyone who believes that great coffee
+    shouldn't just taste good, it should do good too. We source all of our beans
+    directly from small scale sustainable farmers and make sure part of the
+    profits are reinvested in their communities.
+intro:
+  heading: What we offer
+  text: >-
+    Kaldi is the ultimate spot for coffee lovers who want to learn about their
+    java’s origin and support the farmers that grew it. We take coffee
+    production, roasting and brewing seriously and we’re glad to pass that
+    knowledge to anyone.
+products:
+  - image: /img/home-about-section.jpg
+    text: >-
+      We offer a small, but carefully curated selection of brewing gear and
+      tools for every taste and experience level. No matter if you roast your
+      own beans or just bought your first french press, you’ll find a gadget to
+      fall in love with in our shop.
+  - image: /img/home-about-section.jpg
+    text: >-
+      We offer a small, but carefully curated selection of brewing gear and
+      tools for every taste and experience level. No matter if you roast your
+      own beans or just bought your first french press, you’ll find a gadget to
+      fall in love with in our shop.
+values:
+  heading: Our values
+  text: >-
+    Coffee is an amazing part of human culture but it has a dark side too – one
+    of colonialism and mindless abuse of natural resources and human lives. We
+    want to turn this around and return the coffee trade to the drink’s
+    exhilarating, empowering and unifying nature.
 ---
 

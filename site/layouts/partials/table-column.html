@@ -1,17 +1,27 @@
 <!-- Table column -->
 
 
-	  <p class="border-b text-right pr-2 py-2 h-10">
+<h3 class="font-medium">
+		<small class="block uppercase text-grey-dark tracking-wide text-xs">{{.plan}}</small>
+		<span class="text-5xl">
+		  <span class="text-3xl -mr-2">$</span>
+		  <span class="-mr-2">{{.price}}</span>
+		  <sub class="text-sm">/mo</sub>
+		</span>
+	  </h3>
+	  <p>
 			{{.description}}
 	  </p>
 	  <ul class="list-reset text-left mt-4">
 			{{ $itemCount := len .items }}
 			{{ range $index, $item := .items }}
-			<li class="px-4">
-				<p class="{{ if ne (add 1 $index) $itemCount }} {{ end }}">{{ $item }}</p>
-			</li>
+		<li class="border-t py-4">
+			<p class="{{ if ne (add 1 $index) $itemCount }} {{ end }}">{{ $item }}</p>
+		</li>
 		{{ end }}
 	  </ul>
-
+	  <a href="#" class="block my-4 bg-purple rounded text-white no-underline px-6 py-4 hover:bg-purple-light">
+		Choose this plan
+	  </a>
 
 

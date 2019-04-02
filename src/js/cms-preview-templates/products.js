@@ -15,12 +15,19 @@ export default class PostPreview extends React.Component {
 
 
 
-{/* Video Background */}
+
 <section class="text-white p-8 bg-video">
     <div class="container mx-auto">
         <div class="flex-grow flex flex-col justify-center text-center">
           <div class="overlay opacity-50"></div>
-          <iframe width="100%" height="100%" src='https://www.youtube.com/embed/{entry.getIn(["data", "hero", "id"])}' frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe>
+          <iframe width="100%" height="100%"
+            src="https://www.youtube.com/embed/QyQ_6qbsvnY?&autoplay=1&loop=1&rel=0&showinfo=0&controls=0&color=white&iv_load_policy=3&mute=1&playlist=QyQ_6qbsvnY" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+
+          
          <div class="absolute pin z-10 flex-grow flex flex-col justify-center text-center">
               <div class="w-full sm:w-full md:w-1/2 lg:w-1/2 xl:w-1/2 mx-auto lg:py-24"  data-aos="fade-right" data-aos-duration="2000">
                 <h3 class="lg:text-9xl font-serif tracking-wide">{entry.getIn(["data", "hero", "heading"])}</h3>
@@ -31,125 +38,86 @@ export default class PostPreview extends React.Component {
     </div>
   </section>
 
-{/* 4 Up */}
-<section class="py-32 bg-grey-lightest">
-      <div className="container mx-auto">
-        <div className="mx-auto text-center">
-          <h2 className="block font-bold uppercase tracking-wide text-grey-dark text-sm leading-loose">{entry.getIn(["data", "intro", "heading"])}</h2>
-          <p className="leading-tight text-lg font-thin text-center text-grey-darker">{entry.getIn(["data", "intro", "description"])}</p>
 
-          <div className="flex flex-wrap">
-            {(entry.getIn(["data", "intro", "blurbs"]) || []).map((blurb, index) => <div className="my-8 text-center sm:w-1/2 sm:px-4 lg:w-1/4" key={index}>
-              <img src={blurb.get("image") && getAsset(blurb.get("image"))} alt="" className="" style={{width: "240px"}}/>
-              <p className="pt-4 text-grey-darker text-sm leading-loose">{blurb.get("text")}</p>
+      <div className="bg-off-white pv4">
+        <div className="ph3 mw7 center">
+          <h2 className="f2 b lh-title mb2">{entry.getIn(["data", "intro", "heading"])}</h2>
+          <p className="mb4 mw6">{entry.getIn(["data", "intro", "description"])}</p>
+
+          <div className="flex-ns flex-wrap mhn2-ns mb3">
+            {(entry.getIn(["data", "intro", "blurbs"]) || []).map((blurb, index) => <div className="ph2-ns w-50-ns mb4" key={index}>
+              <img src={blurb.get("image") && getAsset(blurb.get("image"))} alt="" className="center db mb3" style={{width: "240px"}}/>
+              <p>{blurb.get("text")}</p>
             </div>)}
           </div>
         </div>
       </div>
-      </section>
 
-{/* products.html */}
-    <section>
-      <div className="container mx-auto">
-        <div className="leading-normal pb-8 text-grey-darker">
-          <h2 className="pt-32 pb-5 font-normal">{entry.getIn(["data", "main", "heading"])}</h2>
+      <div className="mw7 center">
+        <div className="mw6 ph3 mb3">
+          <h3 className="f3 b lh-title mb2">{entry.getIn(["data", "main", "heading"])}</h3>
           <p>{entry.getIn(["data", "main", "description"])}</p>
         </div>
       </div>
-      </section>
 
+      <div className="mw7 center ph3 pv4">
 
-{/* image grid */}
-<div className="container mx-auto px-2">
-		<div className="flex flex-wrap -mx-2">
-			<div className="p-2 w-full sm:w-1/2 md:w-1/2 lg:w-1/2">
-      <img src={getAsset(entry.getIn(["data", "main", "image1", "image"]))}/>
-			</div>
-			<div className="p-2 w-full sm:w-1/2 md:w-1/2 lg:w-1/2">
-      <img src={getAsset(entry.getIn(["data", "main", "image2", "image"]))}/>
-			</div>
-		  </div>
-		  <div className="flex flex-wrap -mx-2">
-				<div className="p-2 w-full">
-        <img src={getAsset(entry.getIn(["data", "main", "image2", "image"]))}/>
-				</div>
-			</div>
-	</div>
+        <div className="flex flex-wrap mhn1">
+          <div className="w-100 w-50-ns ph1-ns">
+            <img src={getAsset(entry.getIn(["data", "main", "image1", "image"]))}/>
+          </div>
 
+          <div className="w-100 w-50-ns ph1-ns">
+            <img src={getAsset(entry.getIn(["data", "main", "image2", "image"]))}/>
+          </div>
 
-{/* BlockQuote */}
-<section className="mt-20">
-        <div className="container mx-auto">
-          <article className="">
-          {(entry.getIn(['data', 'testimonials']) || []).map((testimonial, index) => <div className="bg-grey-lightest p-16 mb-10" key={index}>
-        	<blockquote className="leading-normal mt-4">
-        		<article  className="text-2xl font-medium">
-              “{testimonial.get('quote')}”
-            </article >
-            <footer className="mt-2 text-base font-medium text-grey-dark">
-            - {testimonial.get('author')}
-            </footer>
+          <div className="w-100 ph1-ns">
+            <img src={getAsset(entry.getIn(["data", "main", "image3", "image"]))}/>
+          </div>
+        </div>
+      </div>
+
+      <div className="pb4">
+        {(entry.getIn(['data', 'testimonials']) || []).map((testimonial, index) => <div className="center mb3 ph3" key={index}>
+        	<blockquote className="bg-grey-1 primary pa3 mb3 br1 b mw6 center">
+        		<p className="f4 mb0">“{testimonial.get('quote')}”</p>
+        		<cite className="tr db grey-3">{testimonial.get('author')}</cite>
         	</blockquote>
         </div>)}
-          </article>
-        </div>
- </section>
+      </div>
 
+      <img src={getAsset(entry.getIn(['data', 'full_image']))} alt="" className="db w-100"/>
 
-{/* products.html */}
-<img src={getAsset(entry.getIn(['data', 'full_image']))} alt="" className="w-2/1"/>
+      <div className="bg-off-white pv4 ph3">
+      	<div className="mw7 center">
 
+      		<h2 className="f2 b lh-title mb3">{entry.getIn(['data', 'pricing', 'heading'])}</h2>
+      		<p className="mw6">{entry.getIn(['data', 'pricing', 'description'])}</p>
 
-{/* table */}
-<section class="p-8">
-      <div className="">
-      	<div className="">
+      		<div className="flex-ns mhn2-ns mw7">
+            {(entry.getIn(['data', 'pricing', 'plans']) || []).map((plan, index) => <div className="w-33-ns ph2" key={index}>
+              <div className="ph2">
 
-        <h2 class="leading-tight text-center text-black lg:py-8">
-          <small class="block uppercase tracking-wide text-grey-dark text-sm leading-loose">
-          {entry.getIn(['data', 'pricing', 'heading'])}
-          </small>
-            {entry.getIn(['data', 'pricing', 'description'])}
-        </h2>
+              	<h3 className="b f5 grey-3 tc lh-title mb3">{plan.get('plan')}</h3>
 
-      		<div className="container mx-auto md:flex md:flex-wrap md:justify-center">
-            {(entry.getIn(['data', 'pricing', 'plans']) || []).map((plan, index) => <article className="my-8 text-center md:w-1/2 md:px-8 lg:w-1/3" key={index}>
-             
-             {/* table-column */}
-              <div className="">
+              	<p className="primary f1 b tc lh-title center">
+              		<span className="f4">$</span>{plan.get('price')}
+              	</p>
 
-              	<h3 className="font-medium">
-                <small className="block uppercase text-grey-dark tracking-wide text-xs">{plan.get('plan')}</small>
-                    <span class="text-5xl">
-                      <span class="text-3xl -mr-2">$</span>
-                      <span class="mx-2">{plan.get('price')}</span>
-                      <sub class="text-sm">/mo</sub>
-                    </span>
-                </h3>
+-              	<p className="b">{plan.get('description')}</p>
 
--              	<p className="">{plan.get('description')}</p>
-
-              	<ul className="list-reset text-left mt-4">
-                  {(plan.get('items') || []).map((item, index) => <li className="border-t py-4" key={index}>
+              	<ul>
+                  {(plan.get('items') || []).map((item, index) => <li key={index}>
                     <p className={index + 1 !== plan.get('items').size ? "pb2 mb2 divider-grey" : null}>{item}</p>
                   </li>)}
               	</ul>
-                <a href="#" className="block my-4 bg-purple rounded text-white no-underline px-6 py-4 hover:bg-purple-light">
-                  Choose this plan
-                </a>
 
               </div>
 
-            </article>)}
+            </div>)}
       		</div>
       	</div>
       </div>
-      </section>
-
-
     </div>;
   }
 }
-
-
- 

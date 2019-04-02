@@ -1,0 +1,24 @@
+<header class="h-screen text-white bg-img-parallax" style="background-image: url('{{.imageUrl}}')">
+
+    <div class="container flex flex-col h-full mx-auto">
+      <div class="flex-grow flex flex-col justify-center text-center">
+          
+        <div class="pb-5" data-aos="fade" data-aos-duration="3000">
+            <h1 class="inline-block text-5xl" >{{.title}}</h1>
+        </div>
+        
+  
+        {{ if .subtitle }}
+        <h1 class="text-2xl" data-aos="fade" data-aos-duration="3000">
+          {{.subtitle}}
+        </h1>
+        {{ end }}
+          
+          <footer class="sm:mt-4">
+                <button type="button" class="scroll_down" id="scroll_down"></button>
+            </footer>
+      </div>
+    </div>
+  </header>
+  
+  

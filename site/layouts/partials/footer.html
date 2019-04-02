@@ -1,49 +1,65 @@
 
-<footer class="lg-only container-narrow mx-auto text-xs">
 
-		<div class="flex items-center justify-between flex-wrap pl-6 mt-10 mb-5">
-				<div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto">
-					<div class="text-white">
-						© Copyright 7-Eleven, Australia 2019 .
-					</div>
-				</div>
-				<div class="flex items-center flex-no-shrink text-white mr-6">
-						<div class=""> <a class="text-white px-1" href="/">Home</a> | <a class="text-white px-1" href="/flavours">Flavours</a> | <a class="text-white px-1" href="/promo">Promo</a> | <a class="text-white px-1" href="/news">News</a> | <a class="text-white px-1" href="/contactus">Contact Us</a> | <a class="text-white px-1" href="/privacy-policy">Privacy Policy</a> | <a class="text-white px-1" href="http://www.7eleven.com.au/">7-Eleven.com.au</a> </div>
-				</div>
+<footer class="bg-black p-8 text-grey text-xs md:flex md:flex-wrap">
+		<div class="container mx-auto max-w-lg md:flex md:flex-wrap lg:max-w-xl">
+		  <section class="mt-4 md:w-1/4 md:mt-8">
+			<p>
+			  &copy; Copyright
+			</p>
+			<p class="mt-4 ">
+					{{ partial "social-icon" (dict "link" "#" "svg" "icons-facebook") }}
+
+					{{ partial "social-icon" (dict "link" "#" "svg" "icons-twitter") }}
+
+					{{ partial "social-icon" (dict "link" "#" "svg" "icons-instagram") }}
+
+					{{ partial "social-icon" (dict "link" "#" "svg" "icons-vimeo") }}
+
+			</p>
+		  </section>
+		  <section class="my-8 md:w-1/4">
+			<h2 class="uppercase tracking-wide text-grey text-sm font-normal">Company</h2>
+			<ul class="list-reset text-sm">
+			  <li class="my-2"><a class="text-white no-underline" href="#">About</a></li>
+			  <li class="my-2"><a class="text-white no-underline" href="#">Blog</a></li>
+			  <li class="my-2"><a class="text-white no-underline" href="#">Careers</a></li>
+			  <li class="my-2"><a class="text-white no-underline" href="#">Press</a></li>
+			</ul>
+		  </section>
+		  <section class="my-8 md:w-1/4">
+			<h2 class="uppercase tracking-wide text-grey text-sm font-normal">Product</h2>
+			<ul class="list-reset text-sm">
+			  <li class="my-2"><a class="text-white no-underline" href="#">Features</a></li>
+			  <li class="my-2"><a class="text-white no-underline" href="#">Tour</a></li>
+			  <li class="my-2"><a class="text-white no-underline" href="#">Pricing</a></li>
+			  <li class="my-2"><a class="text-white no-underline" href="#">Screencasts</a></li>
+			</ul>
+		  </section>
+		  <section class="my-8 md:w-1/4">
+			<h2 class="uppercase tracking-wide text-grey text-sm font-normal">Legal</h2>
+			<ul class="list-reset text-sm">
+			  <li class="my-2"><a class="text-white no-underline" href="#">Terms</a></li>
+			  <li class="my-2"><a class="text-white no-underline" href="#">Legal information</a></li>
+			  <li class="my-2"><a class="text-white no-underline" href="#">Privacy</a></li>
+			  <li class="my-2"><a class="text-white no-underline" href="#">Support</a></li>
+			</ul>
+		  </section>
+
+		  <div class="w-full">
+				<div class="">{{ partial "newsletter-form" . }}</div>
 			</div>
 
-
-</footer>
-
-
-<footer class="sm-only mx-auto bg-white p-3">
-		<div class="flex">
-			<div class="w-1/2 text-left text-sm">
-				<a class="text-black font-bold px-1 no-underline" href="/">Home</a>
-				<p class="pt-3">© Copyright 7-Eleven 2019</p>
-			</div>
-			<div class="w-1/2 text-right pr-3">
-				<img src="/img/logo_7eleven.gif" width="50"  >
-			</div>
 		</div>
-</footer>
+	  </footer>
 
 
+{{ partial "svg" . }}
 
-<!-- Plugin JavaScript -->
-<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css" />
-<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
-<script src="http://idangero.us/swiper/dist/js/swiper.min.js"></script>
-
-<script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script> 
-<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=slurpeeaustralia"></script> 
-
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAHuSTGoJPObaj7OOMhqh1L6myGTdXuHX8&callback=loadMap" async defer></script>
-
-<script type="text/javascript" src="/stores.js"></script>
-
+    <!-- Plugin JavaScript -->
+		<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+	<script src="https://unpkg.com/aos@2.3.3/dist/aos.js"></script>
+	<script>AOS.init();</script>
+	
 <script src="/app.js"></script>
 
 </body>
