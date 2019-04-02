@@ -4,7 +4,7 @@ subtitle: Welcome to the template
 image: /img/bg-01.jpeg
 video:
   heading: This is a video section
-  image: /img/about-jumbotron.jpg
+  image: /img/nerlify-logo.jpg
   text: 'This site is using Netlify Cms. Very easy to use. '
   vsrc: 'https://www.youtube.com/embed/p6h-rYSVX90?start=122'
 blurb:
