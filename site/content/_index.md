@@ -5,8 +5,8 @@ image: /img/bg-01.jpeg
 video:
   heading: This is a video section
   image: /img/about-jumbotron.jpg
-  text: Testing 123
-  vsrc: 'https://www.youtube.com/embed/_SglEZKFZxY?autoplay=1'
+  text: 'This site is using Netlify Cms. Very easy to use. '
+  vsrc: 'https://www.youtube.com/embed/p6h-rYSVX90?start=122'
 blurb:
   heading: From the CMS
   text: >-
